@@ -5,10 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <Button
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test"/>
+        android:layout_centerInParent="true">
+        <ToggleButton
+            android:id="@+id/switch_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="打开手电筒"
+            android:textOn="关闭手电筒"/>
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
