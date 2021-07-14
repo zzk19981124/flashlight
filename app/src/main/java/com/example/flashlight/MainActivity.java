@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Boolean flashAvailable = c.get(CameraCharacteristics.FLASH_INFO_AVAILABLE);
                     Integer lenFacing = c.get(CameraCharacteristics.LENS_FACING);
                     if (flashAvailable != null && flashAvailable && lenFacing != null && lenFacing == CameraCharacteristics.LENS_FACING_BACK){
-
+                        //ffffff
                     }
                 }
 
