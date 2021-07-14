@@ -203,7 +203,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 
-    private void changeFlashLight(boolean openorclose) {
+    private void changeFlashLight(boolean isChecked) {
         //针对安卓7.0以上实现打开闪光灯
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Boolean flashAvailable = c.get(CameraCharacteristics.FLASH_INFO_AVAILABLE);
                     Integer lenFacing = c.get(CameraCharacteristics.LENS_FACING);
                     if (flashAvailable != null && flashAvailable && lenFacing != null && lenFacing == CameraCharacteristics.LENS_FACING_BACK){
-                        //ffffff
+
                     }
                 }
 
