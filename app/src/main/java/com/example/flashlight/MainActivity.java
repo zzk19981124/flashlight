@@ -25,14 +25,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ToggleButton lightSwitch;
     private Camera mCamera;
     private Button btn_getPermission,startCamera;
-    private PermissionHelper mPermissionHelper = new PermissionHelper(this);
     private Context mContext;
+    private PermissionHelper mPermissionHelper;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initBind();
+        mPermissionHelper = new PermissionHelper(this);
 
         lightSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
